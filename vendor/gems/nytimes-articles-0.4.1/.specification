@@ -1,0 +1,128 @@
+--- !ruby/object:Gem::Specification 
+name: nytimes-articles
+version: !ruby/object:Gem::Version 
+  hash: 13
+  prerelease: false
+  segments: 
+  - 0
+  - 4
+  - 1
+  version: 0.4.1
+platform: ruby
+authors: 
+- Jacob Harris
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-12-13 00:00:00 -05:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: htmlentities
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: fakeweb
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id002
+description: A gem for accessing the New York Times Article Search API
+email: jharris@nytimes.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README
+files: 
+- .gitignore
+- HISTORY
+- LICENSE
+- README
+- Rakefile
+- VERSION.yml
+- features/nytimes_articles.feature
+- features/steps/nytimes_articles_steps.rb
+- features/support/env.rb
+- lib/nytimes_articles.rb
+- lib/nytimes_articles/article.rb
+- lib/nytimes_articles/base.rb
+- lib/nytimes_articles/exceptions.rb
+- lib/nytimes_articles/facet.rb
+- lib/nytimes_articles/facet_hash.rb
+- lib/nytimes_articles/query.rb
+- lib/nytimes_articles/result_set.rb
+- lib/nytimes_articles/thumbnail.rb
+- nytimes-articles.gemspec
+- script/console
+- test/nytimes/articles/test_article.rb
+- test/nytimes/articles/test_base.rb
+- test/nytimes/articles/test_facet.rb
+- test/nytimes/articles/test_query.rb
+- test/nytimes/articles/test_result_set.rb
+- test/nytimes/articles/test_thumbnail.rb
+- test/test_helper.rb
+has_rdoc: true
+homepage: http://github.com/harrisj/nytimes-articles
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: 
+- Unicode
+- The htmlentities gem
+rubyforge_project: 
+rubygems_version: 1.3.7
+signing_key: 
+specification_version: 3
+summary: A gem for accessing the NYTimes Article Search API
+test_files: 
+- test/nytimes/articles/test_article.rb
+- test/nytimes/articles/test_base.rb
+- test/nytimes/articles/test_facet.rb
+- test/nytimes/articles/test_query.rb
+- test/nytimes/articles/test_result_set.rb
+- test/nytimes/articles/test_thumbnail.rb
+- test/test_helper.rb
