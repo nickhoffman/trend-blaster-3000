@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :currency_values
+
+  map.resources :currencies
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

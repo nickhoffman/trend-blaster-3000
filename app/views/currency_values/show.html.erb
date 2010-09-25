@@ -1,0 +1,13 @@
+<p>
+  <b>Value:</b>
+  <%=h @currency_value.value %>
+</p>
+
+<p>
+  <b>Date bid:</b>
+  <%=h @currency_value.date_bid %>
+</p>
+
+
+<%= link_to 'Edit', edit_currency_value_path(@currency_value) %> |
+<%= link_to 'Back', currency_values_path %>

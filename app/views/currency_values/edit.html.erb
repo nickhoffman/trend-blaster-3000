@@ -1,0 +1,20 @@
+<h1>Editing currency_value</h1>
+
+<% form_for(@currency_value) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :date_bid %><br />
+    <%= f.datetime_select :date_bid %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @currency_value %> |
+<%= link_to 'Back', currency_values_path %>

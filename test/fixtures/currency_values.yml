@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  value: 9.99
+  date_bid: 2010-09-25 13:07:24
+
+two:
+  value: 9.99
+  date_bid: 2010-09-25 13:07:24
