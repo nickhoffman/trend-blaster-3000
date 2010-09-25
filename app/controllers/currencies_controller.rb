@@ -1,4 +1,6 @@
 class CurrenciesController < ApplicationController
+  layout 'application'
+
   def index
     @currencies = Currency.all
 
@@ -9,15 +11,16 @@ class CurrenciesController < ApplicationController
   end
 
   def show
-    @currency = Currency.find_by_name params[:id]
+    @currency = Currency.find_by_name params[:currency][:currency_name]
     @chart    = HighChart.new 'graph' do |h|
       currency_values = @currency.currency_values[0..20]
       h.title   :text => ''
       h.series  :name => @currency.name, :data => currency_values.map {|cv| cv.value.to_f}
       h.chart   :zoomType => 'x'
 
-      h.options[:x_axis][:categories] = currency_values.map {|cv| cv.date_bid.strftime '%Y-%m-%d'}
-      h.options[:y_axis][:title][:text] = 'Value'
+      h.options[:chart  ][:height]        = '400'
+      h.options[:x_axis ][:categories]    = currency_values.map {|cv| cv.date_bid.strftime '%Y-%m-%d'}
+      h.options[:y_axis ][:title][:text]  = 'Value'
     end
 
     respond_to do |format|

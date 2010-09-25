@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Find A Trend</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag 'jquery-1.4.2.min.js' %>
-
-  <%= yield :extra_javascript %>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+    function get_news() {
+    		alert('Done!');
+    }
+    </script>
 </head>
 
 <body>
@@ -21,13 +22,33 @@
 	<div class="main">
 		<div class="main_left">
 			<div class="main_left_padder">
-        <h2><%= yield :heading -%></h2>
+				<h2>Find A Trend</h2>
 				<br />
-				<div style="width: 630px;">
-          <%= yield %>
+				<div style="width: 600px; height: 50px; padding: 10px 0 0 0;">
+					This website allows you to map currency values to popular news stories from that time period, with the goal of providing understanding as to why the market moves the way it does.
+				</div>
+				<div style="width: 630px; height: 60px;">
+					<div style="float: left; width: 470px; height: 60px;">
+						<select id="currency_id" name="currency_id" class="dropdown" style="width: 450px; margin-top: 12px;"> 
+							<option value="0">Select a currency...</option> 
+							<option value="3">United States of America (USD)</option>
+							<option value="2">Canada (CAD)</option>
+							<option value="5">Eurozone (EUR)</option>
+							<option value="8">Australia (CAD)</option>
+						</select>
+					</div>
+					<div style="float: left; width: 100px; height: 100px;">
+						<input type="button" class="button" value="Tell Me Why?" onclick="javascript:get_news();" /> 
+					</div>
 				</div>
 				<div style="width: 630px; height: 1px; clear: both;">
 					&nbsp;
+				</div>
+				<div id="div_graph" style="width: 630px; height: 200px; text-align: left; display: none;">
+					&nbsp;
+				</div>
+				<div id="div_graph" style="width: 630px; height: 50px; display: none;">
+					News goes here.
 				</div>
 			</div>
 		</div>
@@ -51,7 +72,7 @@
 	
 	<div class="footer">
 		<div class="footer_links">
-			&copy; 2010 Nick Hoffman & Sully Syed. No rights reserved.
+			© 2010 Nick Hoffman & Sully Syed. No rights reserved.
 			<br /><br />
 			<a href="help.html">Help</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:sully@yllus.com">Contact</a>
 		</div>

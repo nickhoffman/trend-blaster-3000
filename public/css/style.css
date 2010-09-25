@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f5f5f5 url(../images/bg_body.gif) left top repeat-x;
+	font: 14px "Myriad Pro", Helvetica;
+	color: #979595;
+	text-align: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	line-height: 20px;
+	padding:0 0 20 0;
+}
+
+h2 {
+    font-family: "Myriad Pro", Helvetica;
+    font-size: 22px;
+    color: #808080;
+}
+
+h3 {
+    font-family: "Myriad Pro", Helvetica;
+    font-size: 18px;
+    color: #808080;
+}
+
+/* Start: TITLE CSS */
+.title {
+    height: 90px; 
+    margin-top: 10px;
+    background-repeat: no-repeat;
+}
+
+.title_name {
+    float: left; 
+    width: 475px; 
+    font: normal normal normal 30px/normal 'Myriad Pro', Helvetica; 
+    color: #fffaf0;
+    padding-top: 10px;
+}
+
+.title_desc {
+    float: right; 
+    width: 425px; 
+    text-align: right; 
+    font: normal normal normal 24px/normal 'Myriad Pro', Helvetica; 
+    color: #fffaf0;
+    padding-top: 10px;
+}
+/* End: TITLE CSS */
+
+/* Start: MAIN CSS */
+.main {
+    width: 900px;
+    height: 410px;
+    padding-top: 40px;
+    background: #f5f5f5 url(../images/divider.png) top center no-repeat;
+}
+
+.main_left {
+    float: left;
+    width: 650px;  
+    font: normal normal normal 14px/normal 'Myriad Pro', Helvetica;
+    color: #000000;
+}
+
+.main_right {
+    float: right; 
+    width: 225px; 
+    text-align: left; 
+    font: normal normal bold 18px/normal 'Myriad Pro', Helvetica; 
+    color: #000000;
+}
+
+.main_left_padder {
+    padding: 25px 20px 25px 20px; 
+    background-image: url(../images/page-corner.gif); 
+    background-repeat: no-repeat; 
+    background-position: top right; 
+    background-color: #ffffff;
+}
+
+.main_left_stepname {
+    float: left; 
+    width: 40px; 
+    font-size: 20px; 
+    font-weight: bold;
+    padding-right: 15px;
+    vertical-align: middle;
+    text-align: left; 
+    color: #5F9EA0;
+}
+
+.main_left_stepcontent {
+   float: left;
+   width: 505px;
+}
+
+.main_right_item {
+   padding-top: 20px;
+   width: 225px;
+   color: #979595;
+   font-size: 12px;
+   font-weight: normal;
+}
+
+.main_right_item A {
+   text-decoration: none;
+   color: #696969;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.main_right_more {
+   margin-top: 25px;
+}
+
+.main_right_more A {
+   text-decoration: none;
+   color: #696969;
+   font-size: 12px;
+   font-weight: bold;
+}
+/* End: MAIN CSS */
+
+/* Start: FOOTER CSS */
+.footer {
+    width: 900px; 
+    height: 100px;
+}
+
+.footer_twitter {
+    float: left; 
+    width: 375px; 
+    padding-top: 10px;
+}
+
+.footer_twitter_name {
+    color: #000000;
+    font: normal normal bold 11px/normal 'Myriad Pro', Helvetica;
+}
+
+.footer_twitter_name A {
+   text-decoration: none;
+   color: #5F9EA0;
+   font-weight: bold;
+}
+
+.footer_twitter_text {
+    color: #000000;
+    font: normal normal normal 11px/normal 'Myriad Pro', Helvetica;
+}
+
+.footer_links {
+    float: right; 
+    width: 525px; 
+    text-align: right; 
+    font: normal normal normal 11px/normal 'Myriad Pro', Helvetica; 
+    color: #000000;
+    padding-top: 10px;
+}
+
+.footer_links A {
+   text-decoration: none;
+   color: #5F9EA0;
+   font-weight: normal;
+}
+/* End: FOOTER CSS */
+
+.field {
+    background: #F1F1F1;
+    border: 1px solid #c3c3c3;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    color: #333;
+    font: normal normal normal 18px/normal 'Myriad Pro', Helvetica;
+    padding: 2px;
+}
+
+.dropdown {
+    background: #F1F1F1;
+    border: 1px solid #c3c3c3;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    color: #333333;
+    font: normal normal normal 24px/normal 'Myriad Pro', Helvetica;
+    padding: 2px;
+}
+
+
+.button {
+    color: #333;
+    font: normal normal normal 24px/normal 'Myriad Pro', Helvetica;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.smalltext {
+    color: #000000;
+    font: normal normal normal 11px/normal 'Myriad Pro', Helvetica; 
+}

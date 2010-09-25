@@ -1,16 +1,13 @@
 <% content_for :extra_javascript do -%>
   <%= javascript_include_tag :high_charts %>
+  <%= javascript_include_tag 'search_nytimes' %>
 <% end -%>
 
-<p>
-  <b>Name:</b>
-  <%= @currency.name %>
-</p>
-
-<p>
-  <b>Description:</b>
+<% content_for :heading do -%>
   <%= @currency.description %>
-</p>
+<% end -%>
+
+Click on a data point to view relevant news stories for that time period.
 
 <% high_chart('currency-chart', @chart) do |chart| %>
   <%= "
@@ -19,9 +16,7 @@
       point: {
         events: {
           click: function(event) {
-            console.log('x = ' + this.x);
-            console.log('y = ' + this.y);
-            console.log('category = ' + this.category);
+            searchNYTimes(this.category);
           }
         }
       }
@@ -29,5 +24,4 @@
   " %>
 <% end -%>
 
-<%= link_to 'Edit', edit_currency_path(@currency) %> |
-<%= link_to 'Back', currencies_path %>
+<div id="articles" style="width: 630px;"></div>

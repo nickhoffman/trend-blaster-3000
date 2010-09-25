@@ -1,7 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => :currencies
+
   map.resources :currency_values
 
   map.resources :currencies
+
+  map.resource :ny_times, :except => :all, :member => {:search => :get}
 
   # The priority is based upon order of creation: first created -> highest priority.
 

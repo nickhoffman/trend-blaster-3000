@@ -1,22 +1,13 @@
-<h1>Listing currencies</h1>
+<% content_for :heading do -%>
+  Find A Trend
+<% end -%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
+This website allows you to map currency values to popular news stories from that time period, with the goal of providing understanding as to why the market moves the way it does.<br /><br />
 
-<% @currencies.each do |currency| %>
-  <tr>
-    <td><%=h currency.name %></td>
-    <td><%=h currency.description %></td>
-    <td><%= link_to 'Show', currency %></td>
-    <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
-    <td><%= link_to 'Destroy', currency, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New currency', new_currency_path %>
+<center>
+<% form_for :currency, :url => {:action => :show}, :html => {:method => :get} do |f| %>
+  <%= f.collection_select :currency_name, Currency.all, :name, :description, {}, :class => 'dropdown' %>
+  <br /><br />
+  <%= f.submit 'Tell Me Why?', :class => 'button' %>
+<% end -%>
+</center>
