@@ -1,4 +1,5 @@
 config/database.yml
+config/nytimes.yml
 .bundle
 db/*.sqlite3
 log/*.log

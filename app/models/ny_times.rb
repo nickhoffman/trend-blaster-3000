@@ -1,7 +1,7 @@
 require 'open-uri'
 
 class NYTimes
-  @@api_key   = '26723c1a0aa515f73262631579d3f246:2:61147380'
+  @@api_key   = NY_TIMES['api_key']
   @@base_url  = 'http://api.nytimes.com/svc/search/v1/article?'
 
   def self.search(date, query = 'economy', days_prior = 10)
