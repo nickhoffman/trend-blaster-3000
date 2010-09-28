@@ -1,6 +1,8 @@
 <% content_for :extra_javascript do -%>
   <%= javascript_include_tag :high_charts %>
   <%= javascript_include_tag 'search_nytimes' %>
+  <%= stylesheet_link_tag 'highslide' %>
+  <%= javascript_tag 'var theme = "gray";' %>
 <% end -%>
 
 <% content_for :heading do -%>
